@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 7em 2em 2em; /* Adjusted for fixed header */
+}
+
+section {
+    margin: 2em 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Home Section */
+#home {
+    background-color: #e0f7fa;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+#home h2 {
+    color: #00796b;
+}
+
+#home p {
+    color: #004d40;
+}
+
+/* About Section */
+#about {
+    background-color: #fff3e0;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+#about h2 {
+    color: #e65100;
+}
+
+#about p {
+    color: #bf360c;
+}
+
+/* Services Section */
+#services {
+    background-color: #f3e5f5;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+#services h2 {
+    color: #6a1b9a;
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#services li {
+    margin: 0.5em 0;
+    color: #4a148c;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e1bee7;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    color: #880e4f;
+}
+
+#contact p {
+    color: #6a1b9a;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 40%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
