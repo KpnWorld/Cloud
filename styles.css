@@ -28,11 +28,23 @@ nav ul {
     margin: 0;
 }
 
+/*Navigation Bar*/
 nav ul li {
     display: inline;
     margin: 0 1em;
 }
 
+/* Hover State */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Active State */
+nav ul li a.active {
+    background-color: #000;
+    color: #fff;
+    
+}
 nav ul li a {
     color: white;
     text-decoration: none;
