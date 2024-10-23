@@ -2,10 +2,11 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #f4f4f4;
 }
 
+/* Video Background */
 .video-background {
     position: fixed;
     top: 0;
@@ -22,6 +23,7 @@ body, html {
     object-fit: cover;
 }
 
+/* Header */
 header {
     background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
     color: white;
