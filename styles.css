@@ -15,11 +15,8 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -32,6 +29,7 @@ nav {
 nav .logo img {
     height: 40px;
     margin-right: 20px;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -128,59 +126,3 @@ footer p {
 
 #services ul {
     list-style-type: none;
-    padding: 0;
-}
-
-#services li {
-    margin: 0.5em 0;
-    color: #4a148c;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #e1bee7;
-    padding: 2em;
-    border-radius: 10px;
-}
-
-#contact h2 {
-    color: #880e4f;
-}
-
-#contact p {
-    color: #6a1b9a;
-}
-
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
-}
-
-form label {
-    margin: 0.5em 0 0.2em;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
-    width: 40%;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
-}
