@@ -2,7 +2,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
@@ -18,9 +18,13 @@ body, html {
 }
 
 #bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: translate(-50%, -50%);
 }
 
 /* Header */
