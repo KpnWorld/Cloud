@@ -1,19 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Welcome to KpnWorld!');
-    
-    // Smooth scroll for navigation links
+    // Enable smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('nav ul li a');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
+            // Check if the link is an internal link (same-page anchor)
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
-                behavior: 'smooth'
-            });
+
+            if (targetSection) {
+                // If the section exists, prevent the default behavior and enable smooth scroll
+                e.preventDefault();
+                window.scrollTo({
+                    top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                    behavior: 'smooth'
+                });
+            } else {
+                // If the section doesn't exist (external page), allow default navigation
+                window.location.href = this.getAttribute('href');
+            }
         });
     });
+
+    // Highlight the active link
+    window.addEventListener('load', highlightActiveLink);
+    window.addEventListener('hashchange', highlightActiveLink);
+
+    function highlightActiveLink() {
+        const currentPath = window.location.pathname.split('/').pop();
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPath || href === '#' + currentPath.split('.')[0]) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+});
+
 
     // Contact form validation
     const contactForm = document.querySelector('form');
