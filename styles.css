@@ -3,7 +3,8 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('Website Background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
 }
 
 header {
