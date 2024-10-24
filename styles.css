@@ -9,7 +9,7 @@ body, html {
 header {
     background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
     color: white;
-    padding: 1.5em 0; /* Increased padding for a thicker header */
+    padding: 1em 0;
     position: fixed;
     width: 90%; /* Make the width less than 100% for a floating effect */
     top: 10px; /* Push it down slightly from the top */
@@ -28,6 +28,7 @@ nav {
     display: flex;
     align-items: center;
     width: 100%; /* Ensure nav takes full width */
+    padding: 20px 0; /* Increase padding for a thicker navbar */
 }
 
 nav .logo {
@@ -73,7 +74,7 @@ nav ul li a.active {
 }
 
 main {
-    padding: 8em 2em 2em; /* Adjusted for the new navbar positioning */
+    padding: 9em 2em 2em; /* Adjusted for the new navbar positioning */
 }
 
 section {
@@ -83,7 +84,7 @@ section {
 footer {
     background-color: rgba(51, 51, 51, 0.8); /* Matching transparency */
     color: white;
-    padding: 1.5em 0; /* Increased padding for a thicker footer */
+    padding: 2em 0; /* Increase padding for a thicker footer */
     position: fixed;
     width: 90%;
     bottom: 10px; /* Push it up slightly from the bottom */
@@ -112,4 +113,5 @@ footer p {
 #home p {
     color: #004d40;
 }
+
 
