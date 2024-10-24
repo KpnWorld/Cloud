@@ -178,3 +178,46 @@ footer p {
     background-color: #004d40;
 }
 
+/* Create Account Section */
+#create-account {
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for text readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#create-account h2 {
+    color: #00796b;
+}
+
+#create-account label {
+    display: block;
+    margin: 1em 0 0.5em;
+    color: #004d40;
+}
+
+#create-account input[type="text"],
+#create-account input[type="email"],
+#create-account input[type="password"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#create-account input[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#create-account input[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+
