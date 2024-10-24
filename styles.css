@@ -70,7 +70,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Matching transparency */
     color: white;
     padding: 1em 0;
     position: fixed;
@@ -96,5 +96,3 @@ footer p {
 #home p {
     color: #004d40;
 }
-
-
