@@ -75,16 +75,14 @@ nav ul li a.active {
 
 main {
     padding: 9em 2em 2em; /* Adjusted for the new navbar positioning */
-    background: url('images/background.jpg') no-repeat center center fixed; /* Background image */
-    background-size: cover; /* Cover the entire background */
 }
 
 section {
     margin: 2em 0;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for text readability */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
 }
 
 footer {
@@ -107,15 +105,67 @@ footer p {
 }
 
 /* Home Section */
-#home {
-    padding: 2em;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for text readability */
-}
-
 #home h2 {
     color: #00796b;
 }
 
 #home p {
-    color: #004d
+    color: #004d40;
+}
+
+/* About Section */
+#about h2 {
+    color: #e65100;
+}
+
+#about p {
+    color: #bf360c;
+}
+
+/* Features Section */
+#features h2 {
+    color: #6a1b9a;
+}
+
+#features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#features li {
+    margin: 0.5em 0;
+    color: #4a148c;
+}
+
+/* Testimonials Section */
+#testimonials h2 {
+    color: #880e4f;
+}
+
+#testimonials p {
+    color: #6a1b9a;
+}
+
+/* CTA Section */
+#cta h2 {
+    color: #00796b;
+}
+
+#cta p {
+    color: #004d40;
+}
+
+#cta button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#cta button:hover {
+    background-color: #004d40;
+}
+
