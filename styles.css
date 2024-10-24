@@ -39,6 +39,13 @@ nav .logo {
 nav .logo img {
     height: 40px;
     border-radius: 50%; /* Keep the logo circular */
+    margin-right: 10px;
+}
+
+nav .logo span {
+    font-size: 1.5em; /* Adjust font size for website name */
+    color: white; /* Match the text color with the navbar */
+    font-weight: bold; /* Bold for emphasis */
 }
 
 nav ul {
