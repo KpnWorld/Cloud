@@ -28,6 +28,7 @@ nav {
 
 nav .logo img {
     height: 40px;
+    border-radius: 50%; /* Make the logo circular */
     margin-right: 20px;
 }
 
@@ -95,4 +96,5 @@ footer p {
 #home p {
     color: #004d40;
 }
+
 
