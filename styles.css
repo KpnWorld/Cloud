@@ -11,24 +11,27 @@ header {
     color: white;
     padding: 1em 0;
     position: fixed;
-    width: 100%;
-    top: 0;
+    width: 90%; /* Make the width less than 100% for a floating effect */
+    top: 10px; /* Push it down slightly from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
     z-index: 1000;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Space out items */
+    padding: 0 20px; /* Add padding inside */
 }
 
 nav {
     display: flex;
     align-items: center;
-    width: 100%;
-    justify-content: flex-start;
-    padding-left: 20px; /* Add padding to move the logo away from the edge */
 }
 
 nav .logo img {
     height: 40px;
-    border-radius: 50%; /* Make the logo circular */
+    border-radius: 50%; /* Keep the logo circular */
     margin-right: 20px;
 }
 
@@ -48,6 +51,7 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    border-radius: 10px; /* Rounded links */
 }
 
 /* Hover State */
@@ -62,7 +66,7 @@ nav ul li a.active {
 }
 
 main {
-    padding: 7em 2em 2em; /* Adjusted for fixed header */
+    padding: 8em 2em 2em; /* Adjusted for the new navbar positioning */
 }
 
 section {
@@ -74,9 +78,14 @@ footer {
     color: white;
     padding: 1em 0;
     position: fixed;
-    width: 100%;
-    bottom: 0;
+    width: 90%;
+    bottom: 10px; /* Push it up slightly from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
     z-index: 1000;
+    text-align: center;
 }
 
 footer p {
@@ -96,3 +105,4 @@ footer p {
 #home p {
     color: #004d40;
 }
+
