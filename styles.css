@@ -2,9 +2,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     overflow: hidden; /* Prevents scrollbars */
 }
 
@@ -188,13 +186,4 @@ form input, form textarea {
     padding: 0.5em;
     margin-bottom: 1em;
     border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
-    width: 40%;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer
+    border
