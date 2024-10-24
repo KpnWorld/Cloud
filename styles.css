@@ -27,12 +27,17 @@ header {
 nav {
     display: flex;
     align-items: center;
+    width: 100%; /* Ensure nav takes full width */
+}
+
+nav .logo {
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertical centering */
 }
 
 nav .logo img {
     height: 40px;
     border-radius: 50%; /* Keep the logo circular */
-    margin-right: 20px;
 }
 
 nav ul {
@@ -40,6 +45,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex: 1; /* Take remaining space */
+    justify-content: flex-end; /* Align links to the end */
 }
 
 nav ul li {
@@ -105,4 +112,3 @@ footer p {
 #home p {
     color: #004d40;
 }
-
