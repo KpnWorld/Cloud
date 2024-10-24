@@ -46,6 +46,8 @@ nav .logo span {
     font-size: 1.5em; /* Adjust font size for website name */
     color: white; /* Match the text color with the navbar */
     font-weight: bold; /* Bold for emphasis */
+    font-family: 'Brush Script MT', cursive; /* Set cursive font */
+    margin-left: 10px; /* Add space between logo and website name */
 }
 
 nav ul {
