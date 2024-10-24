@@ -75,10 +75,16 @@ nav ul li a.active {
 
 main {
     padding: 9em 2em 2em; /* Adjusted for the new navbar positioning */
+    background: url('images/background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
 }
 
 section {
     margin: 2em 0;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for text readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 footer {
@@ -104,6 +110,7 @@ footer p {
 #home {
     padding: 2em;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for text readability */
 }
 
 #home h2 {
@@ -111,7 +118,4 @@ footer p {
 }
 
 #home p {
-    color: #004d40;
-}
-
-
+    color: #004d
