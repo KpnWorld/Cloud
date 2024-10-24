@@ -267,5 +267,41 @@ footer p {
     background-color: #004d40;
 }
 
+/* Social Media Icons */
+#socials {
+    text-align: center;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for text readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#socials h2 {
+    color: #00796b;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
 
 
