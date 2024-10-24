@@ -6,9 +6,8 @@ body, html {
     background-color: #f4f4f4;
 }
 
-/* Header */
 header {
-    background-color: #333; /* Solid background color */
+    background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
     color: white;
     padding: 1em 0;
     position: fixed;
@@ -29,7 +28,6 @@ nav {
 
 nav .logo img {
     height: 40px;
-    border-radius: 50%; /* Make the logo circular */
     margin-right: 20px;
 }
 
@@ -53,12 +51,12 @@ nav ul li a {
 
 /* Hover State */
 nav ul li a:hover {
-    background-color: #555;
+    background-color: rgba(85, 85, 85, 0.8); /* Slight transparency on hover */
 }
 
 /* Active State */
 nav ul li a.active {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency for active */
     color: #fff;
 }
 
@@ -86,7 +84,6 @@ footer p {
 
 /* Home Section */
 #home {
-    background-color: rgba(224, 247, 250, 0.8); /* Slight transparency */
     padding: 2em;
     border-radius: 10px;
 }
@@ -99,42 +96,3 @@ footer p {
     color: #004d40;
 }
 
-/* About Section */
-#about {
-    background-color: rgba(255, 243, 224, 0.8); /* Slight transparency */
-    padding: 2em;
-    border-radius: 10px;
-}
-
-#about h2 {
-    color: #e65100;
-}
-
-#about p {
-    color: #bf360c;
-}
-
-/* Services Section */
-#services {
-    background-color: rgba(243, 229, 245, 0.8); /* Slight transparency */
-    padding: 2em;
-    border-radius: 10px;
-}
-
-#services h2 {
-    color: #6a1b9a;
-}
-
-#services ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#services li {
-    margin: 0.5em 0;
-    color: #4a148c;
-}
-
-/* Contact Section */
-#contact {
-    background-color: rgba(225, 190, 231, 0.8); /* Slight transparency */
