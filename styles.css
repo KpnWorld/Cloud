@@ -39,7 +39,7 @@ nav .logo {
 nav .logo img {
     height: 40px;
     border-radius: 50%; /* Keep the logo circular */
-    margin-right: 10px;
+    margin-right: 10px; /* Add space between the logo and website name */
 }
 
 nav .logo span {
