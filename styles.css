@@ -4,49 +4,11 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    overflow: hidden; /* Prevents scrollbars */
 }
 
-/* Other CSS styles remain unchanged */
-
-.header {
-    background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
-    color: white;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-#bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-}
-
+/* Header */
 header {
-    background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
+    background-color: #333; /* Solid background color */
     color: white;
     padding: 1em 0;
     position: fixed;
@@ -176,48 +138,3 @@ footer p {
 /* Contact Section */
 #contact {
     background-color: rgba(225, 190, 231, 0.8); /* Slight transparency */
-    padding: 2em;
-    border-radius: 10px;
-}
-
-#contact h2 {
-    color: #880e4f;
-}
-
-#contact p {
-    color: #6a1b9a;
-}
-
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
-}
-
-form label {
-    margin: 0.5em 0 0.2em;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
-    width: 40%;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
-}
