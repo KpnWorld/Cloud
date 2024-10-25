@@ -302,6 +302,24 @@ footer p {
     transform: scale(1.1);
 }
 
+/* Discord Section */
+#discord {
+    text-align: center;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for text readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#discord h2 {
+    color: #00796b;
+}
+
+#discord iframe {
+    margin-top: 1em;
+}
+
+
 
 
 
