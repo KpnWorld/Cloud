@@ -344,12 +344,15 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 2em 0;
+    border-radius: 15px; /* Round the table edges */
+    overflow: hidden; /* Hide overflow for rounded corners */
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+    border-radius: 10px; /* Round the cells */
 }
 
 th {
@@ -364,6 +367,7 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
+
 
 
 
