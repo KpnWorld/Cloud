@@ -319,6 +319,53 @@ footer p {
     margin-top: 1em;
 }
 
+/* Services Section */
+#features {
+    margin: 2em 0;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+}
+
+#features h2 {
+    color: #6a1b9a;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
 
 
 
