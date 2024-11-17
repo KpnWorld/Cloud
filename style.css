@@ -1,0 +1,45 @@
+/* Reset some default styling */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff; /* Background color of the navbar */
+    border-bottom: 1px solid #eaeaea; /* Subtle bottom border */
+    position: sticky; /* Keeps the navbar at the top while scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo img {
+    height: 40px; /* Adjust as per your logo size */
+    width: auto;
+}
+
+/* Navbar links container */
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+/* Individual links */
+.navbar-links a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+    color: #0078d4; /* Accent color on hover */
+}
