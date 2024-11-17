@@ -6,8 +6,15 @@ body, ul, li {
     font-family: 'Arial', sans-serif;
 }
 
+/* Body styling */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
 /* Navbar container */
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,27 +26,48 @@ body, ul, li {
     z-index: 1000;
 }
 
-/* Logo */
-.navbar-logo img {
-    height: 40px; /* Adjust as per your logo size */
+/* Logo styling */
+nav .logo {
+    height: 40px; /* Adjust this value to your logo size */
     width: auto;
 }
 
 /* Navbar links container */
-.navbar-links {
+ul {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 30px; /* Space between navbar links */
 }
 
-/* Individual links */
-.navbar-links a {
+/* Navbar links styling */
+ul li a {
     text-decoration: none;
-    color: #333; /* Text color */
+    color: #333; /* Link color */
     font-size: 16px;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-/* Hover effect for links */
-.navbar-links a:hover {
+/* Hover effect for navbar links */
+ul li a:hover {
     color: #0078d4; /* Accent color on hover */
+    border-bottom: 2px solid #0078d4; /* Underline effect */
 }
+
+/* Main content sections */
+main {
+    padding: 40px 20px;
+}
+
+/* Section headers */
+h1, h2 {
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+}
+
