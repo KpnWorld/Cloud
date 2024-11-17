@@ -11,6 +11,7 @@ body {
     background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
+    padding-top: 60px; /* Prevent content from hiding behind the floating navbar */
 }
 
 /* Navbar container */
@@ -21,9 +22,11 @@ nav {
     padding: 15px 20px;
     background-color: #ffffff; /* Background color of the navbar */
     border-bottom: 1px solid #eaeaea; /* Subtle bottom border */
-    position: sticky; /* Keeps the navbar at the top while scrolling */
-    top: 0;
-    z-index: 1000;
+    position: fixed; /* Makes the navbar fixed */
+    top: 0; /* Keep it at the top */
+    left: 0; /* Align with the left side */
+    width: 100%; /* Ensure the navbar spans the full width */
+    z-index: 1000; /* Make sure the navbar stays on top of other content */
 }
 
 /* Logo styling */
@@ -70,4 +73,3 @@ footer {
     background-color: #ffffff;
     border-top: 1px solid #eaeaea;
 }
-
