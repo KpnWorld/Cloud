@@ -5,127 +5,142 @@
     box-sizing: border-box;
 }
 
+/* Body */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     line-height: 1.6;
-    padding: 20px;
 }
 
-/* Floating Rounded Navbar */
+/* Floating Logo */
+.floating-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+
+.floating-logo img {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Navbar */
 .floating-navbar {
-    position: fixed; /* Stays in place while scrolling */
-    top: 20px; /* Distance from the top of the page */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    width: 80%; /* Adjust the width of the navbar */
-    max-width: 900px; /* Limit the navbar size on larger screens */
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a floating effect */
-    border-radius: 50px; /* Rounded corners */
-    z-index: 1000; /* Ensure it stays on top */
-    padding: 10px 20px; /* Padding inside the navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99;
 }
 
-/* Navbar content and links */
 .navbar-content {
     display: flex;
-    justify-content: space-evenly; /* Distribute links evenly */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
 }
 
 .navbar-content a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 12px 20px;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
 }
 
 .navbar-content a:hover {
-    color: #0078d4; /* Accent color on hover */
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    background-color: #555;
+    border-radius: 4px;
 }
 
-.navbar-content a.active {
-    color: #0078d4; /* Highlight the active link */
-    border-bottom: none; /* Remove underline for active link */
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
 }
 
-/* Main content spacing */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
 main {
-    padding-top: 100px; /* Prevent content from being hidden under the navbar */
+    margin-top: 80px; /* To avoid navbar overlap */
+    padding: 20px;
 }
 
-/* Section Styling */
 section {
     margin-bottom: 40px;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-section h1, section h2 {
+h1, h2 {
     color: #333;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-section p {
-    color: #555;
-    line-height: 1.8;
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 5px 0;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #eaeaea;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .floating-navbar {
-        width: 95%; /* Reduce navbar width on smaller screens */
-        padding: 8px 16px;
-    }
-
-    .navbar-content a {
-        font-size: 16px; /* Adjust link size for smaller screens */
-    }
-
-    main {
-        padding-top: 80px; /* Adjust padding for smaller navbar */
-    }
-}
-
-/* Floating Logo */
-.floating-logo {
-    position: fixed; /* Fixed position to keep it floating */
-    top: 20px;
-    left: 20px;
-    z-index: 1001; /* Ensures it stays above other elements */
-    width: 150px; /* Match the logo's width */
-    height: 80px; /* Set height for squarcle effect */
-    background-color: #ffffff; /* Background for contrast */
-    border-radius: 40px; /* Rounded corners for squarcle effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Floating shadow */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    overflow: hidden; /* Hide anything that overflows the container */
-}
-
-/* Logo image styling */
-.floating-logo img {
-    width: 100%; /* Make the image fill the width */
-    height: 100%; /* Make the image fill the height */
-    object-fit: contain; /* Preserve aspect ratio without distortion */
-    display: block; /* Ensure no unexpected margin or padding */
+footer p {
+    font-size: 14px;
 }
 
 
