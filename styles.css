@@ -1,75 +1,25 @@
-/* Reset some default styling */
-body, ul, li {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    list-style: none;
-    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
 }
 
-/* Body styling */
 body {
+    font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
-    color: #333;
     line-height: 1.6;
-    padding-top: 60px; /* Prevent content from hiding behind the floating navbar */
-}
-
-/* Navbar container */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #ffffff; /* Background color of the navbar */
-    border-bottom: 1px solid #eaeaea; /* Subtle bottom border */
-    position: fixed; /* Makes the navbar fixed */
-    top: 0; /* Keep it at the top */
-    left: 0; /* Align with the left side */
-    width: 100%; /* Ensure the navbar spans the full width */
-    z-index: 1000; /* Make sure the navbar stays on top of other content */
-}
-
-/* Logo styling */
-nav .logo {
-    height: 40px; /* Adjust this value to your logo size */
-    width: auto;
-}
-
-/* Navbar links container */
-ul {
-    display: flex;
-    gap: 30px; /* Space between navbar links */
-}
-
-/* Navbar links styling */
-ul li a {
-    text-decoration: none;
-    color: #333; /* Link color */
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-/* Hover effect for navbar links */
-ul li a:hover {
-    color: #0078d4; /* Accent color on hover */
-    border-bottom: 2px solid #0078d4; /* Underline effect */
-}
-
-/* Main content sections */
-main {
-    padding: 40px 20px;
-}
-
-/* Section headers */
-h1, h2 {
-    color: #333;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
     padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #eaeaea;
 }
+
+/* Floating Rounded Navbar */
+.floating-navbar {
+    position: fixed; /* Stays in place while scrolling */
+    top: 20px; /* Distance from the top of the page */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 80%; /* Adjust the width of the navbar */
+    max-width: 900px; /* Limit the navbar size on larger screens */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds s
+
