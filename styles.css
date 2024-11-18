@@ -105,27 +105,24 @@ footer {
 
 /* Floating Logo */
 .floating-logo {
-    position: fixed; /* Fixed position for a floating effect */
+    position: fixed; /* Fixed position for floating effect */
     top: 20px;
     left: 20px;
     z-index: 1001; /* Ensure it stays above other elements */
-    width: 150px; /* Match the logo's width */
-    height: 80px; /* Height for squarcle effect */
+    width: 150px; /* Match logo's width */
+    height: 80px; /* Match squarcle height */
     background-color: #ffffff; /* White background for contrast */
-    border-radius: 40px; /* Rounded corners for a squarcle effect */
+    border-radius: 40px; /* Rounded corners for squarcle effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Floating shadow effect */
     display: flex;
-    align-items: center; /* Center the content vertically */
-    justify-content: center; /* Center the content horizontally */
-    padding: 5px; /* Padding to give breathing space */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 /* Logo image styling */
 .floating-logo img {
-    max-width: 90%; /* Ensure the image fits within the container */
-    max-height: 90%; /* Prevent overflow */
-    border-radius: 30px; /* Rounded corners for the image */
-    display: block; /* Ensures no unexpected margin from inline elements */
+    width: auto; /* Maintain aspect ratio */
+    height: 70%; /* Scale to fit the container height */
+    display: block; /* Avoid unexpected spacing from inline elements */
 }
-
 
