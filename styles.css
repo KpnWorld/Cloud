@@ -51,6 +51,7 @@ body {
     text-align: center;
     font-size: 16px;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .navbar-content a:hover {
@@ -71,6 +72,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown:hover .dropbtn {
@@ -86,10 +88,16 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
 }
 
 .dropdown-content a {
@@ -142,6 +150,5 @@ footer {
 footer p {
     font-size: 14px;
 }
-
 
 
