@@ -105,25 +105,27 @@ footer {
 
 /* Floating Logo */
 .floating-logo {
-    position: fixed; /* Fixed position for floating effect */
+    position: fixed; /* Fixed position to keep it floating */
     top: 20px;
     left: 20px;
-    z-index: 1001; /* Ensure it stays above other elements */
-    width: 150px; /* Match logo's width */
-    height: 80px; /* Match squarcle height */
-    background-color: #ffffff; /* White background for contrast */
+    z-index: 1001; /* Ensures it stays above other elements */
+    width: 150px; /* Match the logo's width */
+    height: 80px; /* Set height for squarcle effect */
+    background-color: #ffffff; /* Background for contrast */
     border-radius: 40px; /* Rounded corners for squarcle effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Floating shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Floating shadow */
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    overflow: hidden; /* Hide anything that overflows the container */
 }
 
 /* Logo image styling */
 .floating-logo img {
-    width: auto; /* Maintain aspect ratio */
-    height: 70%; /* Scale to fit the container height */
-    display: block; /* Avoid unexpected spacing from inline elements */
+    width: 100%; /* Make the image fill the width */
+    height: 100%; /* Make the image fill the height */
+    object-fit: contain; /* Preserve aspect ratio without distortion */
+    display: block; /* Ensure no unexpected margin or padding */
 }
 
 
