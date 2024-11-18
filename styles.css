@@ -102,3 +102,28 @@ footer {
         padding-top: 80px; /* Adjust padding for smaller navbar */
     }
 }
+
+/* Floating Logo */
+.floating-logo {
+    position: fixed; /* Fixed position to stay in the top-left corner */
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* Ensure it stays above other elements */
+    width: 150px; /* Match the logo's width */
+    height: 80px; /* Increase height to maintain squarcle feel */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 40px; /* Rounded corners for a squarcle effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Floating shadow effect */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    padding: 5px;
+}
+
+/* Logo image styling */
+.floating-logo img {
+    max-width: 90%; /* Fit image proportionally with slight padding */
+    max-height: 90%; /* Prevent overflow */
+    border-radius: 30px; /* Extra rounding for the image edges */
+}
+
