@@ -125,4 +125,12 @@ footer {
     height: 70%; /* Scale to fit the container height */
     display: block; /* Avoid unexpected spacing from inline elements */
 }
+.floating-logo {
+    border: 1px solid red;
+}
+
+.floating-logo img {
+    border: 1px solid blue;
+}
+
 
