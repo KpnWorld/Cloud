@@ -11,21 +11,29 @@
     <link rel="icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Floating Logo -->
+    <!-- Floating Logo (now a link to Home) -->
     <div class="floating-logo">
-    <a href="#home">
-    <img src="KpnWorld Logo New.png" alt="KpnWorld Logo">
-</a>
-
+        <a href="#home">
+            <img src="KpnWorld Logo New.png" alt="KpnWorld Logo">
+        </a>
     </div>
 
     <!-- Navbar -->
     <header>
         <nav class="floating-navbar">
             <div class="navbar-content">
-                <a href="#about">About</a>
+                <a href="#company">Company</a> <!-- Replaced About with Company -->
                 <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
+
+                <!-- Dropdown Menu for Research -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Research</a>
+                    <div class="dropdown-content">
+                        <a href="#team">Team</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#blog">Blog</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -37,8 +45,8 @@
             <p>Your gateway to creativity and innovation.</p>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
+        <section id="company"> <!-- Updated section id to company -->
+            <h2>Company</h2>
             <p>At KpnWorld, we are dedicated to creating cutting-edge solutions and empowering creativity.</p>
         </section>
 
@@ -49,11 +57,6 @@
                 <li>Creative Consulting</li>
                 <li>Support Services</li>
             </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:og.devworld@gmail.com">og.devworld@gmail.com</a></p>
         </section>
     </main>
 
